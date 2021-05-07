@@ -249,6 +249,12 @@ button:focus {
 .open-project{
     color: orange;
     cursor: pointer;
+    
+    text-transform: none;
+}
+.open-project:hover{
+    color: rgb(228, 151, 8);
+    text-decoration: none;
 }
 
 .card-body{
