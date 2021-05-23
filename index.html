@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body class="scroll-area" data-spy="scroll" data-target="#navbarNav">
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- NAVBAR START -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-color nav-padding fixed-top">
@@ -103,7 +103,24 @@
                 </div>
                 <div class='col-lg-6 col-md-6 col-sm-12' data-aos='fade-up'>
                     <p class='whoAmI'>Who <span style='color: red'>Am</span> I ?</p>
-                    <p class="my-name-work">I am Dheeraj Gogoi</p>
+                    <span class="my-name-work">I am Dheeraj Gogoi</span>
+                    <div id="typed-strings"></div>
+                    <span id="typed"></span>
+
+                    <script>
+                        var typed = new Typed('#typed',{
+                            strings:[
+                                "I love Web Development",
+                                "I love App Development",
+                                "I love Machine Learning",
+                                "I love Photo Editing",
+                                "Let's Collaborate!!",
+                            ],
+                            backSpeed: 50,
+                            typeSpeed: 50,
+                            loop: true,
+                        });
+                    </script>
 
                     <p class='my-info'>I am a Computer Science and Engineering (B.Tech) undergraduate pursuing from Tezpur University, currently in my 2nd semester. I am a full stack MERN developer. My areas of interest include Machine learning, Data Science, Android Development and Web development. I have several other projects that are made using various other tools and are displayed in the Projects section.
                     <br /><br />
@@ -238,8 +255,11 @@
                     <div class="img-middle">
                         <div class="img-text" style='padding: 0'>
                             <div class="card rounded-lg" style='width: 14rem; background: black'>
-                            <div class='card-title working-title'>School Management System</div>
-                                <div class="card-body working" style='color: orange'>Working 🔧</div>
+                                <div class="card-body">
+                                    <h5 class="card-title" style='color: orange'>School Management System</h5>
+                                    <p class="card-text" style='color: white'>Stores data of all the students, MySQL database is used as a storage of records.</p>
+                                    <p><a target="_blank" class='open-project' href='https://github.com/DheerajGogoi/school-management-system'>Open Project &#8594;</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -250,6 +270,7 @@
 
         </div>
     </section>
+    <!-- https://github.com/DheerajGogoi/school-management-system -->
     <!-- PROJECT END -->
 
 
@@ -359,6 +380,8 @@
     <script>
       AOS.init();
     </script>
+
+    <script src="/js/links.js"></script>
     
   </body>
 </html>
